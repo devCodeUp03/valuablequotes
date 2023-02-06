@@ -1,0 +1,70 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: boder-box;
+    
+}
+
+.container {
+    height: 100vh;
+    background-image: url(images/Krishna.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.heading h1{
+    color: white;
+}
+
+.text-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    height: 95vh;
+}
+
+.quotes {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hare-krishna{
+    color: white;
+}
+
+.next-quote {
+    font-size: 1.2rem;
+    padding: 5px;
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.next-quote:hover{
+    cursor: pointer;
+}
+
+.next-quote:active {
+
+    background-color: skyblue;
+    color: black;
+}
+
+.no-of-random-quotes{
+    height: 3vh;
+    width: 98vw;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    
+}
