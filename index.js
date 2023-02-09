@@ -1,6 +1,6 @@
-let quotes = document.querySelector(".quotes");
-let button = document.querySelector(".next-quote");
-let noOfQuotes = document.querySelector("#no-of-quotes");
+let quotes = $(".quotes");
+let button = $(".next-quote");
+let noOfQuotes = $("#no-of-quotes");
 
 const arrayOfQuotes = [
      "Learning to evalutate activity is essential to morality, learning to not equate activity with identity is essential to spirituality.", 
@@ -25,7 +25,7 @@ const arrayOfQuotes = [
      "To be shortsighted is bad; to be shortsighted when we have the responsibility to be farsighted is worse; to be shortsighted when we have the ablility to be farsighted is the worst.",
      "Humility means that one should not be anxious to have the satisfaction of being honoured by others.",
      "We generate fear while we sit. We overcome them by action.",
-     "Humility means to focus on how we can serve, no on what we deserve.",
+     "Humility means to focus on how we can serve, not on what we deserve.",
      "Do no place limits in your bhakti because you are serving to one who has no limits.",
      "To live a good life, worry not about its longevity; work on its quality by perceiving and pursuing spiritual purpose.",
      "It is better to understand a little than to misunderstand a lot.",
@@ -45,15 +45,24 @@ const arrayOfQuotes = [
      "Amid problems, the ungodly forget God and seek solutions solely through their mundane skills; the godly turn to God for guidance and then seek solutions by using their God-given gifts in a devotional mood.",
      "To live spiritually as the Gita recommends, we need to stand apart from those who devaluse spirituality and stay aligned with those who value spirituality.",
      "To better manage our emotions, use our intelligence to remember and realize that we are the sky within which emotions come and go.",
+     "We are kept away from our goal, not by obstacles, but by a clear path to a lesser goal.",
+     "To prevent our self-image from being distorted by life's binaries, we need both spiritual wisdom as an anchor and spiritual practices as means to hold on to that anchor.",
+     "Krishna's love is both universal and particular - it encompasses everyone without discrimination, and it embraces each one of us as a person in our individuality.",
+     "Faith opens our mind to the possibility that what we didn't want or plan could work to our good.",
+     "Don't complain that life is not worth living because it is filled with so many problems; cultivate a purpose that will make life worth living inspite of its many problems.",
+     "Lack of sensitivity in the name of purity dries up our own spirituality and drives other away from spirituality.",
+     "The counter to self-destructive passion is not just dispassion, but divine passion - the passion to love Krishna and serve him with everything we have.",
+     "Self-realization is the increasing alignment of our self-image with our actual image.",
+     "If we learn to look for Krishna's love not in his providing the resources for physical gratification but in his providing the resources for spiritual evolution, we will find that we are always loved."
 
 
 ]
 
-button.addEventListener("click", ()=>{
+button[0].addEventListener("click", ()=>{
     randomNumber = Math.floor(Math.random() * arrayOfQuotes.length);
 
-    quotes.innerHTML = arrayOfQuotes[randomNumber];
+    quotes[0].innerHTML = arrayOfQuotes[randomNumber];
 });
 
 
-noOfQuotes.innerHTML = arrayOfQuotes.length;
+noOfQuotes[0].innerHTML = arrayOfQuotes.length;
